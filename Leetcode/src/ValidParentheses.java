@@ -36,4 +36,7 @@ public class ValidParentheses {
  * First check if string is even length
  * Then, use a stack, push open brackets onto stack
  * When encountering a closed bracket, check to see if matching open is on top of stack
+ * 
+ * Another solution: for every open bracket encountered, push matching close bracket onto stack
+ * When encountering close bracket, check to see if matches top of stack, if not, or if stack empty false
  */
