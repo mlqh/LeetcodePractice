@@ -1,4 +1,3 @@
-import java.util.HashMap;
 
 /**
  * Use case to convert roman to int Start from end of string, if prev is smaller
