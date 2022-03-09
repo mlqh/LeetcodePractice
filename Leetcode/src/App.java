@@ -6,7 +6,9 @@ public class App {
         // 2, -3, 4, 2 }));
         // System.out.println(RomanToInt.romanToInt("IV"));
         int[][] nRooksInput = { { 1, 2 }, { 2, 2 }, { 3, 3 }, { 4, 4 }, { 5, 5 }, { 6, 6 }, { 7, 7 }, { 8, 8 } };
-        System.out.println(N_Rooks.checkAttack(nRooksInput));
+        // System.out.println(N_Rooks.checkAttack(nRooksInput));
+        System.out.println(SubstringReplacement.replaceSubstring("ahijashidkj", "hi", "bye"));
+
     }
 
 }
