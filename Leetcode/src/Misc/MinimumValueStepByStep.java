@@ -1,3 +1,4 @@
+package Misc;
 public class MinimumValueStepByStep {
 
     /**

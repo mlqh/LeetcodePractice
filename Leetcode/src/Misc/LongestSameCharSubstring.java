@@ -1,3 +1,4 @@
+package Misc;
 public class LongestSameCharSubstring {
     public int maxPower(String s) {
         if (s.length() == 1)

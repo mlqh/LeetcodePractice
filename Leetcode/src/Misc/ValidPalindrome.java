@@ -1,3 +1,4 @@
+package Misc;
 /**
  * With the condiitions 1 <= s.length() <= 2^5
  * Alphanumeric wanted only

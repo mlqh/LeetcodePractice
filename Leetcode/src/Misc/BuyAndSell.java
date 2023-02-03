@@ -1,3 +1,4 @@
+package Misc;
 public class BuyAndSell {
     // public static int maxProfit(int[] prices) {
     // int minIndex = 0;

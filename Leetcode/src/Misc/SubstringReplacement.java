@@ -1,3 +1,4 @@
+package Misc;
 public class SubstringReplacement {
     public static String replaceSubstring(String s, String a, String b) {
         StringBuilder newStr = new StringBuilder();

@@ -1,3 +1,4 @@
+package Misc;
 public class PathSum {
     /**
      * Definition for a binary tree node.

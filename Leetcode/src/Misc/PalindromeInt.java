@@ -1,3 +1,4 @@
+package Misc;
 public class PalindromeInt {
     public static boolean isPalindrome(int x) {
         if (x < 0 || x != 0 && x % 10 == 0)
