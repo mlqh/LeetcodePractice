@@ -1,5 +1,7 @@
 import Misc.*;
 import TreeQuestions.*;
+import Arrays.*;
+import DP.*;
 public class App {
 
     public static void main(String[] args) {
@@ -13,7 +15,9 @@ public class App {
         // System.out.println(N_Rooks.checkAttack(nRooksInput));
         // System.out.println(SubstringReplacement.replaceSubstring("ahijashidkj", "hi",
         // "bye"));
-        System.out.println(BuyAndSell.maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
+        // System.out.println(BuyAndSell.maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
+        // System.out.println(SubsetSum.subsetSumRecurse(new int[] {12, 1, 61, 5, 9, 2}, 73));
+        System.out.println(FibonacciSum.fibonacci(10));
     }
 
 }
