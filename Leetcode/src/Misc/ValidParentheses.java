@@ -1,31 +1,38 @@
 package Misc;
-import java.util.Stack;
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+/*
+ * https://leetcode.com/problems/valid-parentheses/description/
+ */
 
 public class ValidParentheses {
-
-    public static boolean isValid(String s) {
-        if (s.length() % 2 != 0)
-            return false;
-        Stack<Character> open = new Stack<>();
-        String openBrackets = "({[";
-        String closeBrackets = ")}]";
-
-        for (char i : s.toCharArray()) {
-            if (openBrackets.indexOf(i) != -1) {
-                open.push(i);
+    public boolean isValid(String s) {
+        if(s.length() % 2 != 0) return false;
+        Deque<Character> stack = new ArrayDeque<>();
+        char c, popped;
+        for(int i = 0; i < s.length(); i++) {
+            c = s.charAt(i);
+            if(c == '(' || c == '{' || c == '[') {
+                stack.addFirst(s.charAt(i));
             } else {
-                if (open.empty())
-                    return false;
-                if (openBrackets.indexOf(open.peek()) == closeBrackets.indexOf(i)) {
-                    open.pop();
-                } else {
-                    return false;
+                if(stack.size() == 0) return false;
+                popped = stack.removeFirst();
+                switch (s.charAt(i)) {
+                    case ')':
+                        if(popped != '(') return false;
+                        break;
+                    case '}':
+                        if(popped != '{') return false;
+                        break;
+                    case ']':
+                        if(popped != '[') return false;
+                        break;
                 }
             }
         }
-        return open.isEmpty();
+        return stack.size() == 0;
     }
-
 }
 
 /**
