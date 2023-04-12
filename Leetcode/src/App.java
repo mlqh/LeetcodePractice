@@ -2,6 +2,7 @@ import Misc.*;
 import TreeQuestions.*;
 import Arrays.*;
 import DP.*;
+
 public class App {
 
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class App {
         // "bye"));
         // System.out.println(BuyAndSell.maxProfit(new int[] { 7, 1, 5, 3, 6, 4 }));
         // System.out.println(SubsetSum.subsetSumRecurse(new int[] {12, 1, 61, 5, 9, 2}, 73));
-        System.out.println(FibonacciSum.fibonacci(10));
+        // System.out.println(FibonacciSum.fibonacci(10));
+        System.out.println(ContainerWithMostWater.maxArea(new int[] {2,3,4,5,18,17,6}));
     }
-
 }
