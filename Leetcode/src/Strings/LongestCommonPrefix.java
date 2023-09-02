@@ -1,5 +1,5 @@
-package Misc;
-public class longestCommonPrefix {
+package Strings;
+public class LongestCommonPrefix {
 
     // mine
     // public String findLongestCommonPrefix(String[] strs) {
