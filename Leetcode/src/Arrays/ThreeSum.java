@@ -14,25 +14,25 @@ public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> solution = new ArrayList<>();
         Arrays.sort(nums);
-        for(int i = 0; i < nums.length - 2; i++) {
-            int j = i + 1;
-            int k = nums.length - 1;
+        for(int pivot = 0; pivot < nums.length - 2; pivot++) {
+            int left = pivot + 1;
+            int right = nums.length - 1;
             int sum = 0;
-            while(j < k) {
-                sum = nums[i] + nums[k] + nums[j];               
+            while(left < right) {
+                sum = nums[pivot] + nums[right] + nums[left];               
                 if(sum == 0) {
-                    solution.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                    j++;
-                    k--;
-                    while(j < k && nums[j] == nums[j - 1]) j++;
-                    while(j < k && nums[k] == nums[k + 1]) k--;
+                    solution.add(Arrays.asList(nums[pivot], nums[left], nums[right]));
+                    left++;
+                    right--;
+                    while(left < right && nums[left] == nums[left - 1]) left++;
+                    while(left < right && nums[right] == nums[right + 1]) right--;
                 } else if(sum < 0) {
-                    j++;
+                    left++;
                 } else {
-                    k--;
+                    right--;
                 }
             }
-            while(i < nums.length - 2 && nums[i + 1] == nums[i]) i++;
+            while(pivot < nums.length - 2 && nums[pivot + 1] == nums[pivot]) pivot++;
         } 
         return solution;
     }
