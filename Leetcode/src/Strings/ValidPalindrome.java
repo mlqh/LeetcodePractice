@@ -9,8 +9,8 @@ package Strings;
  * 
  */
 
-class ValidPalindrome {
-    public boolean isPalindrome(String s) {
+public class ValidPalindrome {
+    public static boolean isPalindrome(String s) {
         if (s.length() < 2) {
             return true;
         }
