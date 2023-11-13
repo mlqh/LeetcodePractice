@@ -1,4 +1,4 @@
-package Practice.Basics;
+package Basics;
 
 public class DesignResizableArray {
     class DynamicArray {
