@@ -56,5 +56,33 @@ public class NumberIslands {
     //     }
     //     return islands;
     // }
+
+    /*
+     * If modify given array not allowed, use visited matrix
+     */
+    // public int numIslands(char[][] grid) {
+    //     int count = 0;
+    //     boolean[][] visited = new boolean[grid.length][grid[0].length];
+    //     int m = grid.length;
+    //     int n = grid[0].length;
+    //     for(int i = 0; i < m; i++) {
+    //         for(int j = 0; j < n; j++) {
+    //             if(grid[i][j] == '1' && !visited[i][j]) {
+    //                 count++;
+    //                 dfs(grid, visited, i, j, m ,n);
+    //             }
+    //         }
+    //     }
+    //     return count;
+    // }
+
+    // public void dfs(char[][] grid, boolean[][] visited, int i, int j, int m, int n) {
+    //     // if(i < 0 || j < 0 || i > grid.length - 1 || j > grid[0].length - 1 || visited[i][j]) return;
+    //     visited[i][j] = true;
+    //     if(i > 0 && grid[i-1][j] == '1' && !visited[i-1][j]) dfs(grid, visited, i - 1, j, m, n);
+    //     if(i < m - 1 && grid[i + 1][j] == '1' && !visited[i+1][j]) dfs(grid, visited, i + 1, j, m, n);
+    //     if(j > 0 && grid[i][j-1] == '1' && !visited[i][j-1]) dfs(grid, visited, i, j - 1, m, n);
+    //     if(j < n - 1 && grid[i][j+1] == '1' && !visited[i][j+1]) dfs(grid, visited, i, j + 1, m, n);
+    // }
 }
 
