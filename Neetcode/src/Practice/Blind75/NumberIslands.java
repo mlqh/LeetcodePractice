@@ -1,4 +1,4 @@
-package Practice.Blind75;
+package Blind75;
 
 /*
  * https://leetcode.com/problems/number-of-islands/description/
