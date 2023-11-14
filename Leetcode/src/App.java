@@ -1,15 +1,17 @@
 import Misc.*;
 import TreeQuestions.*;
+
 import Arrays.*;
 import DP.*;
 import Strings.*;
+import Graphs.*;
 
 public class App {
 
     public static void main(String[] args) {
         // System.out.println(ValidParentheses.isValid("({[])"));
         // System.out.println(ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(PalindromicSubstrings.countSubstrings("abc"));
+        // System.out.println(PalindromicSubstrings.countSubstrings("abc"));
         // System.out.println(PalindromeInt.isPalindrome(1234554321));
         // System.out.println(MinimumValueStepByStep.minStartValuePrefix(new int[] { -3,
         // 2, -3, 4, 2 }));
@@ -23,5 +25,10 @@ public class App {
         // System.out.println(SubsetSum.subsetSumRecurse(new int[] {12, 1, 61, 5, 9, 2}, 73));
         // System.out.println(FibonacciSum.fibonacci(10));
         // System.out.println(ContainerWithMostWater.maxArea(new int[] {2,3,4,5,18,17,6}));
+        
+        int g_nodes = 5;
+        int[] from = {4, 5, 1, 4, 3};
+        int[] to = {5, 1, 4, 3, 2};
+        System.out.println("Cool Graph order: " + Cool.FindCool(g_nodes, from, to));
     }
 }
