@@ -6,17 +6,17 @@ package Arrays;
 
 public class ContainerWithMostWater {
     public static int maxArea(int[] height) {
-        int leftIndx = 0, rightIndx = height.length - 1;
-        int area = 0;
-        while(leftIndx < rightIndx) {
-            int larger = height[leftIndx] <  height[rightIndx] ?  height[leftIndx] :  height[rightIndx];
-            area = area > larger * (rightIndx - leftIndx) ? area : larger * (rightIndx - leftIndx);
-            if(height[leftIndx] < height[rightIndx]) {
-                leftIndx++;
+        int max = 0;
+        int left = 0, right = height.length - 1;
+        while(left < right) {
+            int maxHeight = Math.min(height[left], height[right]);
+            max = Math.max(max, maxHeight * (right - left));
+            if(height[left] < height[right]) {
+                left++;
             } else {
-                rightIndx--;
+                right--;
             }
         }
-        return area;
+        return max;
     }
 }
